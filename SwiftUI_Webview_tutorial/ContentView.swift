@@ -28,6 +28,18 @@ struct ContentView: View {
                         .cornerRadius(20)
                 }
                 NavigationLink(destination:
+                MyWebview(urlToLoad: "https:www.baidu.com")
+                    .edgesIgnoringSafeArea(.all)
+                ){
+                    Text("baidu")
+                        .font(.system(size: 20))
+                        .fontWeight(.bold)
+                        .padding(20)
+                        .background(Color.red)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(20)
+                }
+                NavigationLink(destination:
                     MyWebview(urlToLoad: "https://www.daum.net")
                     .edgesIgnoringSafeArea(.all)
                 ){
